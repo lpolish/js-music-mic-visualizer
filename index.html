@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Visualization</title>
+  <style>
+    body { margin: 0; overflow: hidden; font-family: Arial, sans-serif; }
+    canvas { display: block; }
+    #startButton {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 10px 20px;
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #2196F3;
+      color: white;
+      border: none;
+      outline: none;
+    }
+    #selector {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 5px;
+      font-size: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+  <script src="main.js"></script>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <button id="startButton">Start</button>
+  <div id="selector"></div>
+</body>
+</html>
